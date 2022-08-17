@@ -1,0 +1,282 @@
+:root {
+    --dark: #19283f;
+    --green: #33d1cc;
+    --red: #ff3150;
+    --yellow: #ffc400;
+    --section-color: #eff7fa
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+    background-color: var(--red);
+    color: var(--yellow);
+    padding: 0.4rem 1rem;
+    transition: 0.4s;
+}
+
+.main-btn:hover {
+    color: var(--red);
+    background-color: var(--yellow);
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Start Navbar */
+
+.navbar {
+    background-color: var(--dark);
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover {
+    color: var(--green);
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green);
+}
+
+.navbar .search svg {
+    color: var(--green);
+}
+
+.navbar .navbar-toggler {
+    color: #fff;
+    font-size: 25px;
+    border-color: #fff;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* End Navbar */
+
+
+/* Start Landing */
+
+.landing {
+    background-color: var(--dark);
+    /* background-image: url(../imgs/quds.jpg); */
+    /* background-size: cover; */
+    min-height: calc(100vh - 72px);
+}
+
+@media (max-width:991px) {
+    .landing {
+        min-height: calc(100vh - 70px);
+    }
+}
+
+
+/* End Landing */
+
+
+/* Start Features */
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    font-size: 4rem;
+    color: var(--green);
+}
+
+.features .feat h4 {
+    color: var(--yellow);
+}
+
+
+/* End Features */
+
+
+/* Start Our-Work */
+
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul .active {
+    background-color: var(--red);
+    color: var(--yellow);
+}
+
+.our-work ul li {
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--red);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1ccad;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+
+
+/* End Our-Work */
+
+
+/* Start Stuff */
+
+.description {
+    max-width: 550px;
+}
+
+
+/* End Stuff */
+
+
+/* Start Team */
+
+.team {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow);
+}
+
+.team .box h4 {
+    background-color: var(--green);
+}
+
+
+/* End Team */
+
+
+/* Project */
+
+.project {
+    background-color: var(--dark);
+}
+
+
+/* Project */
+
+
+/* Start Sub */
+
+.sub {
+    background-color: var(--yellow);
+}
+
+.sub input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.sub input[type="text"]:focus {
+    outline: none;
+}
+
+.sub input::placeholder {
+    color: white;
+}
+
+.sub input[type="submit"] {
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+
+
+/* End Sub */
+
+
+/* Start Footer */
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer .author {
+    color: var(--yellow);
+}
+
+.footer .date {
+    color: var(--green);
+}
+
+.footer .socail-link {
+    color: #fff;
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    ;
+}
+
+.github {
+    background-color: #000;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+
+/* End Footer */
